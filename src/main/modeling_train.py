@@ -7,6 +7,7 @@ from torchvision import transforms
 from PIL import Image
 import torchaudio
 import os
+import numpy as np
 
 class MultiModalDataset(Dataset):
     def __init__(self, image_dir, audio_dir, captions_file, max_length=512):
