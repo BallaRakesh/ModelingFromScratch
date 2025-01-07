@@ -8,8 +8,6 @@ from PIL import Image
 import torchaudio
 import os
 
-
-
 class MultiModalDataset(Dataset):
     def __init__(self, image_dir, audio_dir, captions_file, max_length=512):
         self.image_dir = image_dir
